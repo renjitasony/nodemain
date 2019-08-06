@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        th{            
+            width: 50%;
+        }
+        td,th{
+            text-align: center;           
+        }
+    </style>
+</head>
+<body>
+    <h1>Added Product Details</h1>
+    <table border="1" style="width: 25%; border-collapse: collapse;">
+        <tr>
+            <th>Product Name: </th>
+            <td><%= pdcts.nam %></td>
+        </tr>
+        <tr>
+             <th>Product Price: </th>
+             <td><%= pdcts.price %></td>
+        </tr>
+        <tr>
+            <th>Product Quantity:</th>
+            <td><%= pdcts.qty %></td>
+        </tr>
+    </table>
+    <ul>
+        <li>Product Name: <%= pdcts.nam %></li>
+        <li>Product Price: <%= pdcts.price %></li>
+        <li>Product Quantity: <%= pdcts.qty %></li>
+    </ul>
+</body>
+</html>
