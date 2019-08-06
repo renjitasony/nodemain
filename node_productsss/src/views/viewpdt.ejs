@@ -16,11 +16,13 @@
             </tr>
         </thead>
         <tbody>
+            <% for(var i =0;i<pdctlist.length;i++){ %>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td><%= pdctlist[i].lname %></td>
+                <td><%= pdctlist[i].lprice %></td>
+                <td><%= pdctlist[i].lqty %></td>
             </tr>
+            <% } %>
         </tbody>
     </table>
 </body>
