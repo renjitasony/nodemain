@@ -12,7 +12,7 @@ router.get("/new",function(req,res){
     res.render("newpdt");
 });
 router.get ("/view",function(req,res){
-    res.render("viewpdt");
+    res.render("viewpdt",{pdctlist:pdtlist});
 });
 router.get("/remove",function(req,res){
     res.render("removepdt");

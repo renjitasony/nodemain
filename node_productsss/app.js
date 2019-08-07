@@ -2,10 +2,6 @@ var express = require("express");
 var bodyparser = require("body-parser");
 var pdtrouter = require("./router/pdtrouter");
 var pdtdetails = {};
-var pdtlist = [{lname:"P01",lprice:80,lqty:4},
-                {lname:"P02",lprice:120,lqty:13},
-                {lname:"P03",lprice:200,lqty:9},
-                {lname:"P04",lprice:250,lqty:15}];
 
 const app = express();
 app.listen(7890,function(req,res){
