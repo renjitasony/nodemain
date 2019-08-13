@@ -5,14 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        td,th{
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
-    <% for(var i=0;i<empdata.length;i++){ %>
-    <ul>
-        <li>Employee Id:<%= empdata[i].eid %></li>            
-        <li>Employee Name :<%= empdata[i].name %></li>
-        <li>Salary: <%= empdata[i].salary %></li>
-    </ul>
-    <%}%>
+    <table border="2px;" style="border-collapse: collapse;">
+        <thead>
+            <tr>
+                <th>Employee Id</th>
+                <th>Employee Name</th>
+                <th>Employee salary</th>
+            </tr>
+        </thead>
+            <% for(var i=0;i<empdata.length;i++){ %>
+                    <tr>
+                        <td><%= empdata[i].eid %></td>            
+                        <td><%= empdata[i].name %></td>
+                        <td><%= empdata[i].salary %></td>
+                    </tr>
+                    <%}%>
+    </table>   
 </body>
 </html>
