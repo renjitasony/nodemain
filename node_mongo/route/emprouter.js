@@ -1,13 +1,16 @@
 var express = require('express');
 const router = express.Router();
+
 var mongoose = require('mongoose');
 var bodyparser = require('body-parser');
 //establish connecttion with db
 //giving path
-var url ="mongodb://localhost/sdb";
+//var url ="mongodb://localhost/sdb";
+var url = "mongodb+srv://renjitasony:mangoHONET@cluster0-y18tu.mongodb.net/test?retryWrites=true&w=majority"
+
 var emp = require('../model/employee');
 //connecting
-mongoose.connect(url,function(err){
+mongoose.connect(url,{useNewUrlParser:true},function(err){
     if(err) throw err
     else{
         console.log("db connected");

@@ -7,7 +7,7 @@ var empschema = new schema({
     name:String,
     salary:Number
 });
-//third parameter is optional; if not given adds s to fisrst parameter
+//third parameter is optional and used as table name; if not given adds s to fisrst parameter to form table name 
 var empmodel = mongoose.model("employee",empschema);
 
 module.exports = empmodel;
