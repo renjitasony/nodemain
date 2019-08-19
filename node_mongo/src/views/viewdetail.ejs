@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/emp/update/<%= empdata[0].eid %>" method="POST">
+        <ul style="list-style-type: none">
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <label for="eid">Employee ID:</label>
+        <input type="text" name="eid" id="eid" value="<%= empdata[0].eid %>">
+        <br>
+        <label for="ename">Name:</label>
+        <input type="text" name="ename" id="ename" value="<%= empdata[0].name %>">
+        <br>
+        <label for="esal">Salary:</label>
+        <input type="text" name="esal" id="esal" value="<%= empdata[0].salary %>">        
+        <button id="submit">Update</button>
+    </form>
+</body>
+</html>
