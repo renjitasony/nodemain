@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/update/<%= bk.bkimage %>" method="POST">
+        <label for="btitle">Title:</label>
+        <input type="text" name="btitle" value="<%= bk.bktitle %>"> 
+        <button type="submit">Save</button>
+        <br>
+        <br>
+        <img src="/viewimg/<%= bk.bkimage %>" alt="book image" height="150px;" width="150px;">       
+        
+    </form>
+</body>
+</html>
